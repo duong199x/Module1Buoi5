@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[Bài tập] Tạo form đơn giản</title>
+    <style>
+        input {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+Phần 1:
+<div style="background-color: aqua; padding: 5px 5px;width: 600px">
+    <form action="" style="width: 600px;background-color: white">
+        <h1 style="text-align: center; background-color: coral; color: white; margin-top: 0px">SỞ THÍCH CỦA BẠN</h1>
+        <div style="margin-left: 30px">
+            <table>
+                <tr>
+                    <td><span>Họ và tên</span></td>
+                    <td><input type="text" name="yourname"><br></td>
+                </tr>
+                <tr>
+                    <td><span style="margin-left: 24px">Email</span></td>
+                    <td><input type="email" name="email" style="width: 100px"><br></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right"><span>Sở thích</span></td>
+                    <td>
+                        <table>
+                        <tr>
+                            <td><input type="checkbox" name="hobby"><span>Thể thao</span></td>
+                            <td><input type="checkbox" name="hobby"><span>Âm nhạc</span></td>
+                            <td><input type="checkbox" name="hobby"><span>Đọc sách</span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="hobby" ><span>Lướt web</span></td>
+                            <td><input type="checkbox" name="hobby"><span>Chơi game</span></td>
+                            <td><input type="checkbox" name="hobby"><span>Điện ảnh</span> <br></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><input type="checkbox" name="hobby" ><span>Du lịch</span> <br></td>
+                        </tr>
+                    </table></td>
+                </tr>
+            </table>
+            <button style="margin-left: 60px">Gửi thông tin</button>
+            <input type="reset" value="Nhập lại">
+        </div>
+    </form>
+</div>
+Phần 2:
+<div style="background-color: #ffff99; padding: 5px 5px;width: 600px">
+    <form action="">
+        <h1 style="background-color: powderblue;margin-top: 0px; color: blue">ĐĂNG KÍ HỌC VIÊN</h1>
+        <table>
+            <tr>
+                <td><span>Họ và tên</span></td>
+                <td><input type="text" name="name1"><br></td>
+            </tr>
+            <tr>
+                <td><span>Ngày sinh</span></td>
+                <td><input type="date" name="date"><br></td>
+            </tr>
+            <tr>
+                <td><span>Giới tính</span></td>
+                <td><input type="radio" name="gender">Nam
+                    <input type="radio" name="gender">Nữ <br></td>
+            </tr>
+            <tr>
+                <td><span>Địa chỉ</span></td>
+                <td><textarea style="height: 50px" name="description"></textarea></td>
+            </tr>
+            <tr>
+                <td><span>Lớp</span></td>
+                <td><select name="class">
+                    <option>1</option>
+                    <option>2</option>
+                    <option selected="selected">-Chọn lớp-</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><span>Email</span></td>
+                <td><input type="email" style="width: 126px" name="email1"><br></td>
+            </tr>
+            <tr>
+                <td><span>Điện thoại</span></td>
+                <td><input type="text"  style="width: 126px" name="phone"><br></td>
+            </tr>
+        </table>
+        <div style="margin-left: 74px"><button>Đăng ký</button>
+            <input type="reset" value="Nhập lại"></div>
+
+    </form>
+</div>
+</body>
+</html>
